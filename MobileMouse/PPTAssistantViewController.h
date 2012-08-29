@@ -8,19 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
+@class GCDAsyncSocket;
+
 typedef enum {
     KeyTypeLeft,
     KeyTypeRight,
     KeyTypeUp,
     KeyTypeDown,
-    KeyTypePlay,
-    KeyTypeESC,
+    KeyTypeF5orESC,
     KeyTypeClose,
     KeyTypeOpen
 }KeyType;
 
-@interface PPTAssistantViewController : UIViewController
+@interface PPTAssistantViewController : UIViewController {
+    
+    BOOL pptIsPlaying;
+    
+    GCDAsyncSocket *asyncSocket;
+}
 
 @property (nonatomic, assign) KeyType keyType;
+@property (retain, nonatomic) IBOutlet UIButton *playOrExitButton;
+
+- (IBAction)pptAssistantButtonPressed:(id)sender;
 
 @end
