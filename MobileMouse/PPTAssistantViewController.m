@@ -7,6 +7,7 @@
 //
 
 #import "PPTAssistantViewController.h"
+#import "GCDAsyncSocket.h"
 
 @interface PPTAssistantViewController ()
 

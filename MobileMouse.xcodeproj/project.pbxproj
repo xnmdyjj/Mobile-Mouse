@@ -25,6 +25,8 @@
 		4F000F7F15EE3D600044358E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F7E15EE3D600044358E /* Constants.m */; };
 		A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B215EE4D3D00016198 /* HomeViewController.m */; };
 		A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19701B315EE4D3D00016198 /* HomeViewController.xib */; };
+		A19701B915EE530E00016198 /* ServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B815EE530E00016198 /* ServerInfo.m */; };
+		A19701BC15EE556800016198 /* NSUserDefaults+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701BB15EE556800016198 /* NSUserDefaults+Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,10 @@
 		A19701B115EE4D3D00016198 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A19701B215EE4D3D00016198 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A19701B315EE4D3D00016198 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A19701B715EE530E00016198 /* ServerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInfo.h; sourceTree = "<group>"; };
+		A19701B815EE530E00016198 /* ServerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerInfo.m; sourceTree = "<group>"; };
+		A19701BA15EE556800016198 /* NSUserDefaults+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Util.h"; sourceTree = "<group>"; };
+		A19701BB15EE556800016198 /* NSUserDefaults+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Util.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				4F000F8515EE42830044358E /* ShowAlert.m */,
 				4F000F7D15EE3D5F0044358E /* Constants.h */,
 				4F000F7E15EE3D600044358E /* Constants.m */,
+				A19701B715EE530E00016198 /* ServerInfo.h */,
+				A19701B815EE530E00016198 /* ServerInfo.m */,
+				A19701BA15EE556800016198 /* NSUserDefaults+Util.h */,
+				A19701BB15EE556800016198 /* NSUserDefaults+Util.m */,
 				4F000F6D15EE3A620044358E /* TCP */,
 				4F000F2E15EDA60A0044358E /* AppDelegate.h */,
 				4F000F2F15EDA60A0044358E /* AppDelegate.m */,
@@ -224,6 +234,8 @@
 				4F000F6B15EE3A3A0044358E /* PPTAssistantViewController.m in Sources */,
 				4F000F7F15EE3D600044358E /* Constants.m in Sources */,
 				A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */,
+				A19701B915EE530E00016198 /* ServerInfo.m in Sources */,
+				A19701BC15EE556800016198 /* NSUserDefaults+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

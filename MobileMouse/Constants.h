@@ -16,8 +16,6 @@
 #define NO_TIME_OUT -1
 
 
-
-
 @interface Constants : NSObject
 
 @end

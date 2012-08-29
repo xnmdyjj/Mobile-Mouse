@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    KeyTypeLeft,
+    KeyTypeRight,
+    KeyTypeUp,
+    KeyTypeDown,
+    KeyTypePlay,
+    KeyTypeESC,
+    KeyTypeClose,
+    KeyTypeOpen
+}KeyType;
+
 @interface PPTAssistantViewController : UIViewController
+
+@property (nonatomic, assign) KeyType keyType;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "PPTAssistantViewController.h"
 
 @interface HomeViewController ()
 
@@ -43,4 +44,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)homeButtonPressed:(id)sender {
+    
+    PPTAssistantViewController *controller = [[PPTAssistantViewController alloc] initWithNibName:@"PPTAssistantViewController" bundle:nil];
+    
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
+    [controller release];
+}
 @end

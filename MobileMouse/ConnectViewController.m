@@ -11,6 +11,7 @@
 #import "Constants.h"
 #import "ShowAlert.h"
 #import "HomeViewController.h"
+#import "ServerInfo.h"
 
 @interface ConnectViewController ()
 
@@ -54,6 +55,7 @@
 
 - (void)dealloc {
     [ipAddressTextField release];
+    [asyncSocket release];
     [super dealloc];
 }
 
@@ -118,7 +120,12 @@
         
         NSLog(@"Mobile name has been sent");
         
+        ServerInfo *sharedInstance = [ServerInfo sharedManager];
+        
+        sharedInstance.asyncSocket = asyncSocket;
+        
         HomeViewController *controller = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        
         
         [self.navigationController pushViewController:controller animated:YES];
         
