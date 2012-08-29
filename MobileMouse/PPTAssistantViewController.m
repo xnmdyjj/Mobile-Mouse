@@ -111,16 +111,13 @@
             
         case KeyTypeF5orESC:
         {
-            
             if (pptIsPlaying) {
                 
-                [self.playOrExitButton setTitle:PPT_EXIT_DES_STRING forState:UIControlStateNormal];
                 
                  string = [NSString stringWithFormat:@"%@%@", COMMAND_TAG, STRING_COMMAND_PPT_ESC];
  
                 
             }else {
-                [self.playOrExitButton setTitle:PPT_PLAY_DES_STRING forState:UIControlStateNormal];
                 
                 string = [NSString stringWithFormat:@"%@%@", COMMAND_TAG, STRING_COMMAND_PPT_F5];
                 
@@ -165,8 +162,15 @@
     if (tag == KeyTypeF5orESC) {
         
         pptIsPlaying = !pptIsPlaying;
-    }
+        
+        if (pptIsPlaying) {
+            [self.playOrExitButton setTitle:PPT_EXIT_DES_STRING forState:UIControlStateNormal];            
 
+        }else {
+            [self.playOrExitButton setTitle:PPT_PLAY_DES_STRING forState:UIControlStateNormal];
+
+        }
+    }
 }
 
 - (void)dealloc {
