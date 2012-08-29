@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F000F1E15EDA60A0044358E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F1D15EDA60A0044358E /* UIKit.framework */; };
+		4F000F2015EDA60A0044358E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F1F15EDA60A0044358E /* Foundation.framework */; };
+		4F000F2215EDA60A0044358E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F2115EDA60A0044358E /* CoreGraphics.framework */; };
+		4F000F2415EDA60A0044358E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F2315EDA60A0044358E /* CoreData.framework */; };
+		4F000F2A15EDA60A0044358E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F2815EDA60A0044358E /* InfoPlist.strings */; };
+		4F000F2C15EDA60A0044358E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F2B15EDA60A0044358E /* main.m */; };
+		4F000F3015EDA60A0044358E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F2F15EDA60A0044358E /* AppDelegate.m */; };
+		4F000F3315EDA60A0044358E /* MobileMouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F3115EDA60A0044358E /* MobileMouse.xcdatamodeld */; };
+		4F000F6515EE39FD0044358E /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6315EE39FD0044358E /* ConnectViewController.m */; };
+		4F000F6615EE39FD0044358E /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F6415EE39FD0044358E /* ConnectViewController.xib */; };
+		4F000F6B15EE3A3A0044358E /* PPTAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */; };
+		4F000F6C15EE3A3A0044358E /* PPTAssistantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */; };
+		4F000F7515EE3AA00044358E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F7415EE3AA00044358E /* CFNetwork.framework */; };
+		4F000F7A15EE3CAF0044358E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4F000F7C15EE3CFF0044358E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F7B15EE3CFF0044358E /* Security.framework */; };
+		4F000F7F15EE3D600044358E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F7E15EE3D600044358E /* Constants.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F000F1915EDA60A0044358E /* MobileMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F000F1D15EDA60A0044358E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4F000F1F15EDA60A0044358E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F000F2115EDA60A0044358E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4F000F2315EDA60A0044358E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F000F2715EDA60A0044358E /* MobileMouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileMouse-Info.plist"; sourceTree = "<group>"; };
+		4F000F2915EDA60A0044358E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F000F2B15EDA60A0044358E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F000F2D15EDA60A0044358E /* MobileMouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileMouse-Prefix.pch"; sourceTree = "<group>"; };
+		4F000F2E15EDA60A0044358E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F000F2F15EDA60A0044358E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F000F3215EDA60A0044358E /* MobileMouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobileMouse.xcdatamodel; sourceTree = "<group>"; };
+		4F000F6215EE39FD0044358E /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
+		4F000F6315EE39FD0044358E /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		4F000F6415EE39FD0044358E /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
+		4F000F6815EE3A3A0044358E /* PPTAssistantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTAssistantViewController.h; sourceTree = "<group>"; };
+		4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTAssistantViewController.m; sourceTree = "<group>"; };
+		4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPTAssistantViewController.xib; sourceTree = "<group>"; };
+		4F000F6E15EE3A770044358E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4F000F7415EE3AA00044358E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4F000F7B15EE3CFF0044358E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4F000F7D15EE3D5F0044358E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4F000F7E15EE3D600044358E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4F000F8415EE42830044358E /* ShowAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAlert.h; sourceTree = "<group>"; };
+		4F000F8515EE42830044358E /* ShowAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAlert.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F000F1615EDA60A0044358E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F000F7C15EE3CFF0044358E /* Security.framework in Frameworks */,
+				4F000F7515EE3AA00044358E /* CFNetwork.framework in Frameworks */,
+				4F000F1E15EDA60A0044358E /* UIKit.framework in Frameworks */,
+				4F000F2015EDA60A0044358E /* Foundation.framework in Frameworks */,
+				4F000F2215EDA60A0044358E /* CoreGraphics.framework in Frameworks */,
+				4F000F2415EDA60A0044358E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F000F0E15EDA60A0044358E = {
+			isa = PBXGroup;
+			children = (
+				4F000F2515EDA60A0044358E /* MobileMouse */,
+				4F000F1C15EDA60A0044358E /* Frameworks */,
+				4F000F1A15EDA60A0044358E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F000F1A15EDA60A0044358E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F1915EDA60A0044358E /* MobileMouse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F000F1C15EDA60A0044358E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F7B15EE3CFF0044358E /* Security.framework */,
+				4F000F7415EE3AA00044358E /* CFNetwork.framework */,
+				4F000F1D15EDA60A0044358E /* UIKit.framework */,
+				4F000F1F15EDA60A0044358E /* Foundation.framework */,
+				4F000F2115EDA60A0044358E /* CoreGraphics.framework */,
+				4F000F2315EDA60A0044358E /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F000F2515EDA60A0044358E /* MobileMouse */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F8415EE42830044358E /* ShowAlert.h */,
+				4F000F8515EE42830044358E /* ShowAlert.m */,
+				4F000F7D15EE3D5F0044358E /* Constants.h */,
+				4F000F7E15EE3D600044358E /* Constants.m */,
+				4F000F6D15EE3A620044358E /* TCP */,
+				4F000F2E15EDA60A0044358E /* AppDelegate.h */,
+				4F000F2F15EDA60A0044358E /* AppDelegate.m */,
+				4F000F6215EE39FD0044358E /* ConnectViewController.h */,
+				4F000F6315EE39FD0044358E /* ConnectViewController.m */,
+				4F000F6415EE39FD0044358E /* ConnectViewController.xib */,
+				4F000F6815EE3A3A0044358E /* PPTAssistantViewController.h */,
+				4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */,
+				4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */,
+				4F000F3115EDA60A0044358E /* MobileMouse.xcdatamodeld */,
+				4F000F2615EDA60A0044358E /* Supporting Files */,
+			);
+			path = MobileMouse;
+			sourceTree = "<group>";
+		};
+		4F000F2615EDA60A0044358E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F2715EDA60A0044358E /* MobileMouse-Info.plist */,
+				4F000F2815EDA60A0044358E /* InfoPlist.strings */,
+				4F000F2B15EDA60A0044358E /* main.m */,
+				4F000F2D15EDA60A0044358E /* MobileMouse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F000F6D15EE3A620044358E /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F6E15EE3A770044358E /* GCDAsyncSocket.h */,
+				4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */,
+			);
+			name = TCP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F000F1815EDA60A0044358E /* MobileMouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F000F3615EDA60A0044358E /* Build configuration list for PBXNativeTarget "MobileMouse" */;
+			buildPhases = (
+				4F000F1515EDA60A0044358E /* Sources */,
+				4F000F1615EDA60A0044358E /* Frameworks */,
+				4F000F1715EDA60A0044358E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileMouse;
+			productName = MobileMouse;
+			productReference = 4F000F1915EDA60A0044358E /* MobileMouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F000F1015EDA60A0044358E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Yu Jianjun";
+			};
+			buildConfigurationList = 4F000F1315EDA60A0044358E /* Build configuration list for PBXProject "MobileMouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F000F0E15EDA60A0044358E;
+			productRefGroup = 4F000F1A15EDA60A0044358E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F000F1815EDA60A0044358E /* MobileMouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F000F1715EDA60A0044358E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F000F2A15EDA60A0044358E /* InfoPlist.strings in Resources */,
+				4F000F6615EE39FD0044358E /* ConnectViewController.xib in Resources */,
+				4F000F6C15EE3A3A0044358E /* PPTAssistantViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F000F1515EDA60A0044358E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F000F7A15EE3CAF0044358E /* GCDAsyncSocket.m in Sources */,
+				4F000F2C15EDA60A0044358E /* main.m in Sources */,
+				4F000F3015EDA60A0044358E /* AppDelegate.m in Sources */,
+				4F000F3315EDA60A0044358E /* MobileMouse.xcdatamodeld in Sources */,
+				4F000F6515EE39FD0044358E /* ConnectViewController.m in Sources */,
+				4F000F6B15EE3A3A0044358E /* PPTAssistantViewController.m in Sources */,
+				4F000F7F15EE3D600044358E /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F000F2815EDA60A0044358E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F000F2915EDA60A0044358E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F000F3415EDA60A0044358E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4F000F3515EDA60A0044358E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F000F3715EDA60A0044358E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileMouse/MobileMouse-Prefix.pch";
+				INFOPLIST_FILE = "MobileMouse/MobileMouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F000F3815EDA60A0044358E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileMouse/MobileMouse-Prefix.pch";
+				INFOPLIST_FILE = "MobileMouse/MobileMouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F000F1315EDA60A0044358E /* Build configuration list for PBXProject "MobileMouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F000F3415EDA60A0044358E /* Debug */,
+				4F000F3515EDA60A0044358E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F000F3615EDA60A0044358E /* Build configuration list for PBXNativeTarget "MobileMouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F000F3715EDA60A0044358E /* Debug */,
+				4F000F3815EDA60A0044358E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F000F3115EDA60A0044358E /* MobileMouse.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F000F3215EDA60A0044358E /* MobileMouse.xcdatamodel */,
+			);
+			currentVersion = 4F000F3215EDA60A0044358E /* MobileMouse.xcdatamodel */;
+			path = MobileMouse.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4F000F1015EDA60A0044358E /* Project object */;
+}
