@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ConnectViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,7 @@
     [_managedObjectContext release];
     [_managedObjectModel release];
     [_persistentStoreCoordinator release];
+    [_navigationController release];
     [super dealloc];
 }
 
@@ -26,9 +28,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    ConnectViewController *controller = [[ConnectViewController alloc] initWithNibName:@"ConnectViewController" bundle:nil];
+    
+    UINavigationController *aNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    self.navigationController = aNavigationController;
+    
+    self.window.rootViewController = self.navigationController;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [controller release];
+    [aNavigationController release];
     return YES;
 }
 

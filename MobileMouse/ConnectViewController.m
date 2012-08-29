@@ -10,6 +10,7 @@
 #import "GCDAsyncSocket.h"
 #import "Constants.h"
 #import "ShowAlert.h"
+#import "HomeViewController.h"
 
 @interface ConnectViewController ()
 
@@ -31,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.ipAddressTextField.text = @"192.168.1.107";
     
     asyncSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
@@ -114,6 +117,12 @@
     if (tag == TAG_WRITE_MOBILE_INFO) {
         
         NSLog(@"Mobile name has been sent");
+        
+        HomeViewController *controller = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:controller animated:YES];
+        
+        [controller release];
     }
 }
 

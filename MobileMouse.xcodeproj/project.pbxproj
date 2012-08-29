@@ -23,6 +23,8 @@
 		4F000F7A15EE3CAF0044358E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4F000F7C15EE3CFF0044358E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F7B15EE3CFF0044358E /* Security.framework */; };
 		4F000F7F15EE3D600044358E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F7E15EE3D600044358E /* Constants.m */; };
+		A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B215EE4D3D00016198 /* HomeViewController.m */; };
+		A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19701B315EE4D3D00016198 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,9 @@
 		4F000F7E15EE3D600044358E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		4F000F8415EE42830044358E /* ShowAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAlert.h; sourceTree = "<group>"; };
 		4F000F8515EE42830044358E /* ShowAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAlert.m; sourceTree = "<group>"; };
+		A19701B115EE4D3D00016198 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A19701B215EE4D3D00016198 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A19701B315EE4D3D00016198 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */,
 				4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */,
 				4F000F3115EDA60A0044358E /* MobileMouse.xcdatamodeld */,
+				A19701B115EE4D3D00016198 /* HomeViewController.h */,
+				A19701B215EE4D3D00016198 /* HomeViewController.m */,
+				A19701B315EE4D3D00016198 /* HomeViewController.xib */,
 				4F000F2615EDA60A0044358E /* Supporting Files */,
 			);
 			path = MobileMouse;
@@ -197,6 +205,7 @@
 				4F000F2A15EDA60A0044358E /* InfoPlist.strings in Resources */,
 				4F000F6615EE39FD0044358E /* ConnectViewController.xib in Resources */,
 				4F000F6C15EE3A3A0044358E /* PPTAssistantViewController.xib in Resources */,
+				A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +223,7 @@
 				4F000F6515EE39FD0044358E /* ConnectViewController.m in Sources */,
 				4F000F6B15EE3A3A0044358E /* PPTAssistantViewController.m in Sources */,
 				4F000F7F15EE3D600044358E /* Constants.m in Sources */,
+				A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
