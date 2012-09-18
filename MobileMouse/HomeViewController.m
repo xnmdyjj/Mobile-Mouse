@@ -8,6 +8,11 @@
 
 #import "HomeViewController.h"
 #import "PPTAssistantViewController.h"
+#import "WirelessMouseViewController.h"
+#import "RemoteToolViewController.h"
+#import "KeyboardViewController.h"
+#import "RemoteDesktopViewController.h"
+#import "TestViewController.h"
 
 @interface HomeViewController ()
 
@@ -46,11 +51,80 @@
 
 - (IBAction)homeButtonPressed:(id)sender {
     
-    PPTAssistantViewController *controller = [[PPTAssistantViewController alloc] initWithNibName:@"PPTAssistantViewController" bundle:nil];
+    UIButton *button = (UIButton *)sender;
     
+    switch (button.tag) {
+        case 0:
+        {
+            PPTAssistantViewController *controller = [[PPTAssistantViewController alloc] initWithNibName:@"PPTAssistantViewController" bundle:nil];
+            
+            
+            [self.navigationController pushViewController:controller animated:YES];
+            
+            [controller release];
+            break;
+        }
+            
+        case 1:
+        {
+            WirelessMouseViewController *controller = [[WirelessMouseViewController alloc] initWithNibName:@"WirelessMouseViewController" bundle:nil];
+            
+            [self.navigationController pushViewController:controller animated:YES];
+            
+            [controller release];
+            
+            break;
+        }
+        case 2:
+            
+        {
+            KeyboardViewController *controller = [[KeyboardViewController alloc] initWithNibName:@"KeyboardViewController" bundle:nil];
+            
+            [self.navigationController pushViewController:controller animated:YES];
+            
+            [controller release];
+            
+            break;
+        }
+            
+        case 3:
+        {
+            RemoteDesktopViewController *controller = [[RemoteDesktopViewController alloc] initWithNibName:@"RemoteDesktopViewController" bundle:nil];
+            
+            [self.navigationController pushViewController:controller animated:YES];
+            
+            [controller release];
+            
+            break;
+            
+        }
+            
+        case 5:
+        {
+            RemoteToolViewController *controller = [[RemoteToolViewController alloc] initWithNibName:@"RemoteToolViewController" bundle:nil];
+            
+            [self.navigationController pushViewController:controller animated:YES];
+            
+            [controller release];
+            
+            break;
+        }
+            
+        case 6:
+        {
+            TestViewController *controller = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+            
+            [self.navigationController pushViewController:controller animated:YES];
+            
+            [controller release];
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
     
-    [self.navigationController pushViewController:controller animated:YES];
-    
-    [controller release];
+   
 }
 @end

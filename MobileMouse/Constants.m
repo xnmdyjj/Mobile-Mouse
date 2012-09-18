@@ -10,6 +10,8 @@
 
 NSString *const COMMAND_TAG = @"#";
 
+NSString *const DOS_COMMANT_TAG = @"$";
+
 NSString *const STRING_COMMAND_PPT_F5 = @"F5";
 NSString *const STRING_COMMAND_PPT_ESC = @"ESC";
 NSString *const STRING_COMMAND_PPT_PRE = @"pre";

@@ -34,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.ipAddressTextField.text = @"192.168.1.107";
+    self.ipAddressTextField.text = @"192.168.118.111";
     
     asyncSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
@@ -88,6 +88,10 @@
     
     NSLog(@"Cool, I'm connected! That was easy.");
     
+    ServerInfo *sharedInstance = [ServerInfo sharedManager];
+    
+    sharedInstance.serverIPAddress = host;
+    
     [asyncSocket readDataWithTimeout:NO_TIME_OUT tag:TAG_SERVER_SCREEN_INFO];
 
 }
@@ -101,14 +105,21 @@
         
         NSLog(@"screenInfo = %@", screenInfo);
         
-        [screenInfo release];
+        NSArray *components = [screenInfo componentsSeparatedByString:@":"];
+    
+        ServerInfo *sharedInstance = [ServerInfo sharedManager];
         
+        sharedInstance.serverScreenWidth = [[components objectAtIndex:1] floatValue];
         
+        sharedInstance.serverScreenHeight = [[components objectAtIndex:2] floatValue];
+    
         NSString *deviceName =  [[UIDevice currentDevice] name];
         
         NSData *data = [deviceName dataUsingEncoding:NSUTF8StringEncoding];
         
         [asyncSocket writeData:data withTimeout:NO_TIME_OUT tag:TAG_WRITE_MOBILE_INFO];
+        
+        [screenInfo release];
         
     }
 }

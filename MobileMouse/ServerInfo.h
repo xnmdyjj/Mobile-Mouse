@@ -20,7 +20,12 @@ typedef enum {
 
 @property (nonatomic,assign) ServerType serverType;
 
+@property (nonatomic, assign) CGFloat serverScreenWidth;
+@property (nonatomic, assign) CGFloat serverScreenHeight;
+
 @property (nonatomic, retain) GCDAsyncSocket *asyncSocket;
+
+@property (nonatomic, retain) NSString *serverIPAddress;
 
 + (id)sharedManager;
 

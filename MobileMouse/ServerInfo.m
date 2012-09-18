@@ -40,6 +40,8 @@ static ServerInfo *sharedMyManager = nil;
 }
 - (id)init {
     if (self = [super init]) {
+        
+        self.serverType = ServerTypeWindows;
 
     }
     return self;

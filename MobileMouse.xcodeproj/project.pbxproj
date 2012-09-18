@@ -23,6 +23,20 @@
 		4F000F7A15EE3CAF0044358E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4F000F7C15EE3CFF0044358E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F7B15EE3CFF0044358E /* Security.framework */; };
 		4F000F7F15EE3D600044358E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F7E15EE3D600044358E /* Constants.m */; };
+		4F000F9915EE70BE0044358E /* TouchPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F9715EE70BD0044358E /* TouchPadViewController.m */; };
+		4F000F9A15EE70BE0044358E /* TouchPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F9815EE70BD0044358E /* TouchPadViewController.xib */; };
+		4F000F9F15EE71230044358E /* WirelessMouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F9D15EE71230044358E /* WirelessMouseViewController.m */; };
+		4F000FA015EE71230044358E /* WirelessMouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F9E15EE71230044358E /* WirelessMouseViewController.xib */; };
+		4F000FA415EE71810044358E /* WindowsTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000FA315EE71810044358E /* WindowsTouchView.m */; };
+		4F000FA715EE71970044358E /* MacTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000FA615EE71970044358E /* MacTouchView.m */; };
+		4F06374415FDEE8600275E83 /* RemoteDesktopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F06374215FDEE8600275E83 /* RemoteDesktopViewController.m */; };
+		4F06374515FDEE8600275E83 /* RemoteDesktopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F06374315FDEE8600275E83 /* RemoteDesktopViewController.xib */; };
+		4F0E4E9D15F357090049C5DA /* RemoteToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E4E9B15F357080049C5DA /* RemoteToolViewController.m */; };
+		4F0E4E9E15F357090049C5DA /* RemoteToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E4E9C15F357090049C5DA /* RemoteToolViewController.xib */; };
+		4F0E4EAF15F36D740049C5DA /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E4EAD15F36D740049C5DA /* KeyboardViewController.m */; };
+		4F0E4EB015F36D740049C5DA /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E4EAE15F36D740049C5DA /* KeyboardViewController.xib */; };
+		4F1E61C316059AED0096FAD3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E61C116059AED0096FAD3 /* TestViewController.m */; };
+		4F1E61C416059AED0096FAD3 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E61C216059AED0096FAD3 /* TestViewController.xib */; };
 		A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B215EE4D3D00016198 /* HomeViewController.m */; };
 		A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19701B315EE4D3D00016198 /* HomeViewController.xib */; };
 		A19701B915EE530E00016198 /* ServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B815EE530E00016198 /* ServerInfo.m */; };
@@ -56,6 +70,28 @@
 		4F000F7E15EE3D600044358E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		4F000F8415EE42830044358E /* ShowAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAlert.h; sourceTree = "<group>"; };
 		4F000F8515EE42830044358E /* ShowAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAlert.m; sourceTree = "<group>"; };
+		4F000F9615EE70BD0044358E /* TouchPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPadViewController.h; sourceTree = "<group>"; };
+		4F000F9715EE70BD0044358E /* TouchPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPadViewController.m; sourceTree = "<group>"; };
+		4F000F9815EE70BD0044358E /* TouchPadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchPadViewController.xib; sourceTree = "<group>"; };
+		4F000F9C15EE71230044358E /* WirelessMouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WirelessMouseViewController.h; sourceTree = "<group>"; };
+		4F000F9D15EE71230044358E /* WirelessMouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WirelessMouseViewController.m; sourceTree = "<group>"; };
+		4F000F9E15EE71230044358E /* WirelessMouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WirelessMouseViewController.xib; sourceTree = "<group>"; };
+		4F000FA215EE71810044358E /* WindowsTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsTouchView.h; sourceTree = "<group>"; };
+		4F000FA315EE71810044358E /* WindowsTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsTouchView.m; sourceTree = "<group>"; };
+		4F000FA515EE71970044358E /* MacTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacTouchView.h; sourceTree = "<group>"; };
+		4F000FA615EE71970044358E /* MacTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacTouchView.m; sourceTree = "<group>"; };
+		4F06374115FDEE8600275E83 /* RemoteDesktopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteDesktopViewController.h; sourceTree = "<group>"; };
+		4F06374215FDEE8600275E83 /* RemoteDesktopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteDesktopViewController.m; sourceTree = "<group>"; };
+		4F06374315FDEE8600275E83 /* RemoteDesktopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteDesktopViewController.xib; sourceTree = "<group>"; };
+		4F0E4E9A15F357080049C5DA /* RemoteToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteToolViewController.h; sourceTree = "<group>"; };
+		4F0E4E9B15F357080049C5DA /* RemoteToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteToolViewController.m; sourceTree = "<group>"; };
+		4F0E4E9C15F357090049C5DA /* RemoteToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteToolViewController.xib; sourceTree = "<group>"; };
+		4F0E4EAC15F36D730049C5DA /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		4F0E4EAD15F36D740049C5DA /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		4F0E4EAE15F36D740049C5DA /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		4F1E61C016059AED0096FAD3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4F1E61C116059AED0096FAD3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4F1E61C216059AED0096FAD3 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		A19701B115EE4D3D00016198 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A19701B215EE4D3D00016198 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A19701B315EE4D3D00016198 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -115,15 +151,11 @@
 		4F000F2515EDA60A0044358E /* MobileMouse */ = {
 			isa = PBXGroup;
 			children = (
-				4F000F8415EE42830044358E /* ShowAlert.h */,
-				4F000F8515EE42830044358E /* ShowAlert.m */,
-				4F000F7D15EE3D5F0044358E /* Constants.h */,
-				4F000F7E15EE3D600044358E /* Constants.m */,
-				A19701B715EE530E00016198 /* ServerInfo.h */,
-				A19701B815EE530E00016198 /* ServerInfo.m */,
-				A19701BA15EE556800016198 /* NSUserDefaults+Util.h */,
-				A19701BB15EE556800016198 /* NSUserDefaults+Util.m */,
+				4F1E61CD1605D0F60096FAD3 /* Util */,
+				4F1E61CC1605D0EC0096FAD3 /* Model */,
 				4F000F6D15EE3A620044358E /* TCP */,
+				4FB67E9815F2E53C00855D0E /* mac */,
+				4F000FA115EE715A0044358E /* View */,
 				4F000F2E15EDA60A0044358E /* AppDelegate.h */,
 				4F000F2F15EDA60A0044358E /* AppDelegate.m */,
 				4F000F6215EE39FD0044358E /* ConnectViewController.h */,
@@ -136,7 +168,22 @@
 				A19701B115EE4D3D00016198 /* HomeViewController.h */,
 				A19701B215EE4D3D00016198 /* HomeViewController.m */,
 				A19701B315EE4D3D00016198 /* HomeViewController.xib */,
+				4F000F9C15EE71230044358E /* WirelessMouseViewController.h */,
+				4F000F9D15EE71230044358E /* WirelessMouseViewController.m */,
+				4F000F9E15EE71230044358E /* WirelessMouseViewController.xib */,
+				4F0E4E9A15F357080049C5DA /* RemoteToolViewController.h */,
+				4F0E4E9B15F357080049C5DA /* RemoteToolViewController.m */,
+				4F0E4E9C15F357090049C5DA /* RemoteToolViewController.xib */,
+				4F0E4EAC15F36D730049C5DA /* KeyboardViewController.h */,
+				4F0E4EAD15F36D740049C5DA /* KeyboardViewController.m */,
+				4F0E4EAE15F36D740049C5DA /* KeyboardViewController.xib */,
+				4F06374115FDEE8600275E83 /* RemoteDesktopViewController.h */,
+				4F06374215FDEE8600275E83 /* RemoteDesktopViewController.m */,
+				4F06374315FDEE8600275E83 /* RemoteDesktopViewController.xib */,
 				4F000F2615EDA60A0044358E /* Supporting Files */,
+				4F1E61C016059AED0096FAD3 /* TestViewController.h */,
+				4F1E61C116059AED0096FAD3 /* TestViewController.m */,
+				4F1E61C216059AED0096FAD3 /* TestViewController.xib */,
 			);
 			path = MobileMouse;
 			sourceTree = "<group>";
@@ -159,6 +206,49 @@
 				4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */,
 			);
 			name = TCP;
+			sourceTree = "<group>";
+		};
+		4F000FA115EE715A0044358E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F000FA215EE71810044358E /* WindowsTouchView.h */,
+				4F000FA315EE71810044358E /* WindowsTouchView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F1E61CC1605D0EC0096FAD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F7D15EE3D5F0044358E /* Constants.h */,
+				4F000F7E15EE3D600044358E /* Constants.m */,
+				A19701B715EE530E00016198 /* ServerInfo.h */,
+				A19701B815EE530E00016198 /* ServerInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F1E61CD1605D0F60096FAD3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F8415EE42830044358E /* ShowAlert.h */,
+				4F000F8515EE42830044358E /* ShowAlert.m */,
+				A19701BA15EE556800016198 /* NSUserDefaults+Util.h */,
+				A19701BB15EE556800016198 /* NSUserDefaults+Util.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		4FB67E9815F2E53C00855D0E /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				4F000F9615EE70BD0044358E /* TouchPadViewController.h */,
+				4F000F9715EE70BD0044358E /* TouchPadViewController.m */,
+				4F000F9815EE70BD0044358E /* TouchPadViewController.xib */,
+				4F000FA515EE71970044358E /* MacTouchView.h */,
+				4F000FA615EE71970044358E /* MacTouchView.m */,
+			);
+			name = mac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +306,12 @@
 				4F000F6615EE39FD0044358E /* ConnectViewController.xib in Resources */,
 				4F000F6C15EE3A3A0044358E /* PPTAssistantViewController.xib in Resources */,
 				A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */,
+				4F000F9A15EE70BE0044358E /* TouchPadViewController.xib in Resources */,
+				4F000FA015EE71230044358E /* WirelessMouseViewController.xib in Resources */,
+				4F0E4E9E15F357090049C5DA /* RemoteToolViewController.xib in Resources */,
+				4F0E4EB015F36D740049C5DA /* KeyboardViewController.xib in Resources */,
+				4F06374515FDEE8600275E83 /* RemoteDesktopViewController.xib in Resources */,
+				4F1E61C416059AED0096FAD3 /* TestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +332,14 @@
 				A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */,
 				A19701B915EE530E00016198 /* ServerInfo.m in Sources */,
 				A19701BC15EE556800016198 /* NSUserDefaults+Util.m in Sources */,
+				4F000F9915EE70BE0044358E /* TouchPadViewController.m in Sources */,
+				4F000F9F15EE71230044358E /* WirelessMouseViewController.m in Sources */,
+				4F000FA415EE71810044358E /* WindowsTouchView.m in Sources */,
+				4F000FA715EE71970044358E /* MacTouchView.m in Sources */,
+				4F0E4E9D15F357090049C5DA /* RemoteToolViewController.m in Sources */,
+				4F0E4EAF15F36D740049C5DA /* KeyboardViewController.m in Sources */,
+				4F06374415FDEE8600275E83 /* RemoteDesktopViewController.m in Sources */,
+				4F1E61C316059AED0096FAD3 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

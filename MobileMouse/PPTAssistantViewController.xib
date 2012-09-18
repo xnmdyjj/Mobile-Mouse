@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">12A269</string>
+		<string key="IBDocument.SystemVersion">12B19</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
 		<string key="IBDocument.AppKitVersion">1187</string>
 		<string key="IBDocument.HIToolboxVersion">624.00</string>
@@ -173,7 +173,6 @@
 						<string key="NSFrame">{{213, 330}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUITag">6</int>
@@ -194,7 +193,7 @@
 					<object class="IBUIButton" id="188256236">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{124, 141}, {72, 37}}</string>
+						<string key="NSFrame">{{120, 141}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="829286305"/>
@@ -332,9 +331,9 @@
 							<reference ref="829286305"/>
 							<reference ref="769143140"/>
 							<reference ref="1053995167"/>
-							<reference ref="188256236"/>
 							<reference ref="690676592"/>
 							<reference ref="80246446"/>
+							<reference ref="188256236"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
