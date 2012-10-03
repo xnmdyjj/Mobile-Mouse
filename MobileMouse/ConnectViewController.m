@@ -13,6 +13,8 @@
 #import "HomeViewController.h"
 #import "ServerInfo.h"
 
+#define USER_DEFAULT_IP_ADDRESS_KEY @"user_default_ip_address_key"
+
 @interface ConnectViewController ()
 
 @end
@@ -34,11 +36,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.ipAddressTextField.text = @"192.168.118.111";
+    self.navigationItem.title = NSLocalizedString(@"Mobile Mouse", nil);
+    
+    self.ipAddressTextField.placeholder = NSLocalizedString(@"Server IP Address", nil);
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+    self.ipAddressTextField.text = [defaults objectForKey:USER_DEFAULT_IP_ADDRESS_KEY];
+ 
+    [self.ipAddressTextField becomeFirstResponder];
     
     asyncSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
 }
+
 
 - (void)viewDidUnload
 {
@@ -62,19 +73,30 @@
 - (IBAction)connectAction:(id)sender {
     NSError *error = nil;
 	NSString *host = self.ipAddressTextField.text;
-    
-    if (![asyncSocket connectToHost:host onPort:SERVER_PORT error:&error])
-	{
-		NSLog(@"Unable to connect to due to invalid configuration: %@", [error description]);
+
+    if (host != nil && [host length] > 0) {
+        NSString *trimmedHost = [host stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         
-        [self showAlertMessage:[error description]];
+        if ([asyncSocket isConnected]) {
+            [asyncSocket disconnect];
+        }
         
-	}
-	else
-	{
-		NSLog(@"Connecting to \"%@\" on port %d...", host, SERVER_PORT);
-	}
-    
+        if (asyncSocket.delegate == nil) {
+            asyncSocket.delegate = self;
+        }
+        
+        if (![asyncSocket connectToHost:trimmedHost onPort:SERVER_PORT error:&error])
+        {
+            NSLog(@"Unable to connect to due to invalid configuration: %@", [error description]);
+            
+            [self showAlertMessage:[error localizedDescription]];
+            
+        }
+        else
+        {
+            NSLog(@"Connecting to \"%@\" on port %d...", host, SERVER_PORT);
+        }
+    }
 }
 
 
@@ -88,6 +110,11 @@
     
     NSLog(@"Cool, I'm connected! That was easy.");
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:host forKey:USER_DEFAULT_IP_ADDRESS_KEY];
+    [defaults synchronize];
+    
+
     ServerInfo *sharedInstance = [ServerInfo sharedManager];
     
     sharedInstance.serverIPAddress = host;

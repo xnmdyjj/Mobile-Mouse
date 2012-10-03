@@ -33,7 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.navigationItem.title = NSLocalizedString(@"Remote Tool", nil);
+    self.navigationItem.title = NSLocalizedString(@"Remote Command", nil);
     
     ServerInfo *sharedInstance = [ServerInfo sharedManager];
     

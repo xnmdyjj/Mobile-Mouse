@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
-- (IBAction)homeButtonPressed:(id)sender;
+
+@property (nonatomic, retain) NSArray *dataArray;
+
 
 @end

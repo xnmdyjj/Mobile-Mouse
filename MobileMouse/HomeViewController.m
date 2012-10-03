@@ -12,7 +12,6 @@
 #import "RemoteToolViewController.h"
 #import "KeyboardViewController.h"
 #import "RemoteDesktopViewController.h"
-#import "TestViewController.h"
 
 @interface HomeViewController ()
 
@@ -34,7 +33,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.navigationItem.title = NSLocalizedString(@"主页", nil);
+    self.navigationItem.title = NSLocalizedString(@"Mobile Mouse", nil);
+    
+    self.dataArray = [NSArray arrayWithObjects:NSLocalizedString(@"PPT Assistant",nil), NSLocalizedString(@"Wireless Mouse",nil), NSLocalizedString(@"Remote Command", nil), NSLocalizedString(@"Remote Desktop", nil), nil];
 }
 
 - (void)viewDidUnload
@@ -49,16 +50,55 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)homeButtonPressed:(id)sender {
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return [_dataArray count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    UIButton *button = (UIButton *)sender;
+    if (!cell) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+    }
     
-    switch (button.tag) {
+    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.section];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section) {
         case 0:
         {
-            PPTAssistantViewController *controller = [[PPTAssistantViewController alloc] initWithNibName:@"PPTAssistantViewController" bundle:nil];
+            PPTAssistantViewController *controller;
             
-            
+            if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+                controller = [[PPTAssistantViewController alloc] initWithNibName:@"PPTAssistantViewController" bundle:nil];
+            }else {
+                
+                controller = [[PPTAssistantViewController alloc] initWithNibName:@"PPTAssistantView_iPad" bundle:nil];
+            }
+ 
             [self.navigationController pushViewController:controller animated:YES];
             
             [controller release];
@@ -75,10 +115,18 @@
             
             break;
         }
-        case 2:
             
+        case 2:
         {
-            KeyboardViewController *controller = [[KeyboardViewController alloc] initWithNibName:@"KeyboardViewController" bundle:nil];
+            RemoteToolViewController *controller;
+            
+            if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+                controller = [[RemoteToolViewController alloc] initWithNibName:@"RemoteToolViewController" bundle:nil];
+                
+            }else {
+                controller = [[RemoteToolViewController alloc] initWithNibName:@"RemoteToolView_iPad" bundle:nil];
+                
+            }
             
             [self.navigationController pushViewController:controller animated:YES];
             
@@ -98,33 +146,16 @@
             break;
             
         }
-            
-        case 5:
-        {
-            RemoteToolViewController *controller = [[RemoteToolViewController alloc] initWithNibName:@"RemoteToolViewController" bundle:nil];
-            
-            [self.navigationController pushViewController:controller animated:YES];
-            
-            [controller release];
-            
-            break;
-        }
-            
-        case 6:
-        {
-            TestViewController *controller = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
-            
-            [self.navigationController pushViewController:controller animated:YES];
-            
-            [controller release];
-            
-            break;
-        }
-            
+        
         default:
             break;
     }
-    
-   
 }
+
+-(void)dealloc {
+    
+    [_dataArray release];
+    [super dealloc];
+}
+
 @end

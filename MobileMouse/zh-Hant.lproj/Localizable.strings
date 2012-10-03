@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  MobileMouse
+
+  Created by Yu Jianjun on 10/3/12.
+  Copyright (c) 2012 Yu Jianjun. All rights reserved.
+*/
+
+"Mobile Mouse" = "无线鼠盘";
+
+"Server IP Address" = "服務器IP地址";
+
+"PPT Assistant" = "PPT助手";
+
+"Wireless Mouse" = "无线鼠标";
+
+"Remote Command" = "遠程命令";
+
+"Remote Desktop" = "遠程桌面";
+
+"Help" = "帮助";
+
+"Q:How to move mouse pointer?" = "Q:如何移动鼠标指针?";
+
+"A:Use one finger to drag" = "A:使用一个手指拖动";
+
+"Q:How to click?" = "Q:如何单击?";
+
+"A:Use one finger to tap" = "A:使用一个手指按一下";
+
+"Q:How to double click?" = "Q:如何双击?";
+
+"A:Use one finger to tap twice" = "A:使用一个手指按两下";
+
+"Q:How to right click?" = "Q:如何右击?";
+
+"A:Use two fingers to tap" = "A:使用两个手指按一下";
+
+"确定" = "確定";

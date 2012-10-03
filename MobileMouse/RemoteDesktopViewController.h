@@ -14,6 +14,8 @@
     GCDAsyncSocket *desktopAsyncSocket;
     
     GCDAsyncSocket *mouseAsyncSocket;
+    
+    UIStatusBarStyle _previousStatusBarStyle;
 }
 
 
@@ -23,5 +25,6 @@
 
 @property (nonatomic, assign) CGFloat desktopScale;
 
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
 
 @end

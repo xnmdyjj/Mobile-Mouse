@@ -10,11 +10,11 @@
 #import "Constants.h"
 #import "ShowAlert.h"
 #import "ServerInfo.h"
+#import "WMHelpViewController.h"
 
 #define IMAGE_RESPONSE_TERMINATOR @"19871104"
-#define HIDE_BAR_TIME_INTERVAL 4.0
+#define HIDE_BAR_TIME_INTERVAL 3.0
 #define HIDE_BAR_OBJECT_STRING @"Hide Bar"
-
 
 @interface RemoteDesktopViewController ()
 
@@ -38,6 +38,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = NSLocalizedString(@"Remote Desktop", nil);
+    
+    UIBarButtonItem *helpBarButtonItem = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedString(@"Help", nil) style:UIBarButtonItemStyleBordered target:self action:@selector(helpButtonPressed:)];
+    
+    self.navigationItem.rightBarButtonItem = helpBarButtonItem;
+    
+    [helpBarButtonItem release];
     
     
     ServerInfo *sharedInstance = [ServerInfo sharedManager];
@@ -105,25 +113,40 @@
     
     [twoFingerOneTapGestureRecognizer release];
     
-    UITapGestureRecognizer *twoFingerTwoTapsGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(twoFingerTwoTapsAction:)];
-    
-    twoFingerTwoTapsGestureRecognizer.numberOfTouchesRequired = 2;
-    twoFingerTwoTapsGestureRecognizer.numberOfTapsRequired = 2;
-    
-    [self.imageView addGestureRecognizer:twoFingerTwoTapsGestureRecognizer];
-    
-    [twoFingerTwoTapsGestureRecognizer release];
+//    UITapGestureRecognizer *twoFingerTwoTapsGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(twoFingerTwoTapsAction:)];
+//    
+//    twoFingerTwoTapsGestureRecognizer.numberOfTouchesRequired = 2;
+//    twoFingerTwoTapsGestureRecognizer.numberOfTapsRequired = 2;
+//    
+//    [self.imageView addGestureRecognizer:twoFingerTwoTapsGestureRecognizer];
+//    
+//    [twoFingerTwoTapsGestureRecognizer release];
 }
 
--(void)twoFingerTwoTapsAction:(UITapGestureRecognizer *)sender {
+//-(void)twoFingerTwoTapsAction:(UITapGestureRecognizer *)sender {
+//    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideBar) object:nil];
+//    
+//    [self showBar];
+//    
+//    [self performSelector:@selector(hideBar) withObject:nil afterDelay:HIDE_BAR_TIME_INTERVAL];
+//}
+
+-(void)helpButtonPressed:(id)sender {
+    
+    WMHelpViewController *controller = [[WMHelpViewController alloc] initWithNibName:@"WMHelpViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
+    [controller release];
+}
+
+-(void)tappedAction:(UITapGestureRecognizer *)sender {
+    
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideBar) object:nil];
     
     [self showBar];
     
     [self performSelector:@selector(hideBar) withObject:nil afterDelay:HIDE_BAR_TIME_INTERVAL];
-}
-
--(void)tappedAction:(UITapGestureRecognizer *)sender {
     
     CGPoint point = [sender locationInView:self.imageView];
     
@@ -247,11 +270,14 @@
 
 }
 
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleBlackTranslucent];
+    
+    if (self.wantsFullScreenLayout && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        _previousStatusBarStyle = [[UIApplication sharedApplication] statusBarStyle];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:animated];
+    }
     
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
     self.navigationController.navigationBar.translucent = YES;
@@ -262,9 +288,15 @@
 {
     [super viewWillDisappear:animated];
     
-    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleDefault];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideBar) object:nil];
     
+    // Status bar
+    if (self.wantsFullScreenLayout && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        [[UIApplication sharedApplication] setStatusBarStyle:_previousStatusBarStyle animated:animated];
+    }
+
     [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -279,6 +311,7 @@
 - (void)viewDidUnload
 {
     [self setImageView:nil];
+    [self setActivityView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -351,6 +384,8 @@
             
             NSLog(@"length = %d", [data length]);
             
+            self.activityView.hidden = YES;
+            
             UIImage *image = [UIImage imageWithData:data];
             
             self.imageView.image = image;
@@ -368,6 +403,7 @@
     desktopAsyncSocket.delegate = nil;
     [desktopAsyncSocket release];
     [imageView release];
+    [_activityView release];
     [super dealloc];
 }
 

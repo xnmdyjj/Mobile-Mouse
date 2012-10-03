@@ -164,10 +164,15 @@
         pptIsPlaying = !pptIsPlaying;
         
         if (pptIsPlaying) {
-            [self.playOrExitButton setTitle:PPT_EXIT_DES_STRING forState:UIControlStateNormal];            
+            //[self.playOrExitButton setTitle:PPT_EXIT_DES_STRING forState:UIControlStateNormal];
+            
+            [self.playOrExitButton setBackgroundImage:[UIImage imageNamed:@"pause.png"] forState:UIControlStateNormal];
+            
 
         }else {
-            [self.playOrExitButton setTitle:PPT_PLAY_DES_STRING forState:UIControlStateNormal];
+            //[self.playOrExitButton setTitle:PPT_PLAY_DES_STRING forState:UIControlStateNormal];
+            
+            [self.playOrExitButton setBackgroundImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
 
         }
     }

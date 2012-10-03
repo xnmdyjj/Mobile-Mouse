@@ -16,27 +16,44 @@
 		4F000F3015EDA60A0044358E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F2F15EDA60A0044358E /* AppDelegate.m */; };
 		4F000F3315EDA60A0044358E /* MobileMouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F3115EDA60A0044358E /* MobileMouse.xcdatamodeld */; };
 		4F000F6515EE39FD0044358E /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6315EE39FD0044358E /* ConnectViewController.m */; };
-		4F000F6615EE39FD0044358E /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F6415EE39FD0044358E /* ConnectViewController.xib */; };
 		4F000F6B15EE3A3A0044358E /* PPTAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */; };
-		4F000F6C15EE3A3A0044358E /* PPTAssistantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */; };
 		4F000F7515EE3AA00044358E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F7415EE3AA00044358E /* CFNetwork.framework */; };
 		4F000F7A15EE3CAF0044358E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4F000F7C15EE3CFF0044358E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F000F7B15EE3CFF0044358E /* Security.framework */; };
 		4F000F7F15EE3D600044358E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F7E15EE3D600044358E /* Constants.m */; };
-		4F000F9915EE70BE0044358E /* TouchPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F9715EE70BD0044358E /* TouchPadViewController.m */; };
-		4F000F9A15EE70BE0044358E /* TouchPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F9815EE70BD0044358E /* TouchPadViewController.xib */; };
 		4F000F9F15EE71230044358E /* WirelessMouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F9D15EE71230044358E /* WirelessMouseViewController.m */; };
 		4F000FA015EE71230044358E /* WirelessMouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F000F9E15EE71230044358E /* WirelessMouseViewController.xib */; };
 		4F000FA415EE71810044358E /* WindowsTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000FA315EE71810044358E /* WindowsTouchView.m */; };
-		4F000FA715EE71970044358E /* MacTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000FA615EE71970044358E /* MacTouchView.m */; };
 		4F06374415FDEE8600275E83 /* RemoteDesktopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F06374215FDEE8600275E83 /* RemoteDesktopViewController.m */; };
 		4F06374515FDEE8600275E83 /* RemoteDesktopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F06374315FDEE8600275E83 /* RemoteDesktopViewController.xib */; };
 		4F0E4E9D15F357090049C5DA /* RemoteToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E4E9B15F357080049C5DA /* RemoteToolViewController.m */; };
-		4F0E4E9E15F357090049C5DA /* RemoteToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E4E9C15F357090049C5DA /* RemoteToolViewController.xib */; };
 		4F0E4EAF15F36D740049C5DA /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E4EAD15F36D740049C5DA /* KeyboardViewController.m */; };
 		4F0E4EB015F36D740049C5DA /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E4EAE15F36D740049C5DA /* KeyboardViewController.xib */; };
-		4F1E61C316059AED0096FAD3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E61C116059AED0096FAD3 /* TestViewController.m */; };
-		4F1E61C416059AED0096FAD3 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E61C216059AED0096FAD3 /* TestViewController.xib */; };
+		4F31052C161C33D100A52F82 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F31052B161C33D100A52F82 /* iAd.framework */; };
+		4F310532161C3ED000A52F82 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310531161C3ED000A52F82 /* down.png */; };
+		4F310534161C3EED00A52F82 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310533161C3EED00A52F82 /* up.png */; };
+		4F310536161C3EF700A52F82 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310535161C3EF600A52F82 /* left.png */; };
+		4F310538161C3F0400A52F82 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310537161C3F0400A52F82 /* right.png */; };
+		4F31053B161C3FBE00A52F82 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310539161C3FBD00A52F82 /* pause.png */; };
+		4F31053C161C3FBE00A52F82 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F31053A161C3FBD00A52F82 /* play.png */; };
+		4F31054A161C6B6600A52F82 /* ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F000F8515EE42830044358E /* ShowAlert.m */; };
+		4F310551161C6F7100A52F82 /* ipad_table_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F31054D161C6F7000A52F82 /* ipad_table_down.png */; };
+		4F310552161C6F7100A52F82 /* ipad_table_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F31054E161C6F7000A52F82 /* ipad_table_down@2x.png */; };
+		4F310553161C6F7100A52F82 /* ipad_table.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F31054F161C6F7000A52F82 /* ipad_table.png */; };
+		4F310554161C6F7100A52F82 /* ipad_table@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310550161C6F7100A52F82 /* ipad_table@2x.png */; };
+		4F310559161C6F7B00A52F82 /* sign_In_form_alone_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310555161C6F7B00A52F82 /* sign_In_form_alone_down.png */; };
+		4F31055A161C6F7B00A52F82 /* sign_In_form_alone_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310556161C6F7B00A52F82 /* sign_In_form_alone_down@2x.png */; };
+		4F31055B161C6F7B00A52F82 /* sign_In_form_alone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310557161C6F7B00A52F82 /* sign_In_form_alone.png */; };
+		4F31055C161C6F7B00A52F82 /* sign_In_form_alone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F310558161C6F7B00A52F82 /* sign_In_form_alone@2x.png */; };
+		4F310571161C87F500A52F82 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F310573161C87F500A52F82 /* Localizable.strings */; };
+		4F310581161C94E500A52F82 /* RemoteToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F310583161C94E500A52F82 /* RemoteToolViewController.xib */; };
+		4F310586161C95F500A52F82 /* RemoteToolView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F310588161C95F500A52F82 /* RemoteToolView_iPad.xib */; };
+		4F31058B161C987000A52F82 /* PPTAssistantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F31058D161C987000A52F82 /* PPTAssistantViewController.xib */; };
+		4F310590161C9A5000A52F82 /* PPTAssistantView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F310592161C9A5000A52F82 /* PPTAssistantView_iPad.xib */; };
+		4F310599161CA00D00A52F82 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F31059B161CA00D00A52F82 /* ConnectViewController.xib */; };
+		4F31059F161CA05E00A52F82 /* ConnectView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3105A1161CA05E00A52F82 /* ConnectView_iPad.xib */; };
+		4FB3EDA2161963450073E84D /* WMHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3EDA0161963450073E84D /* WMHelpViewController.m */; };
+		4FB3EDA3161963450073E84D /* WMHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB3EDA1161963450073E84D /* WMHelpViewController.xib */; };
 		A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B215EE4D3D00016198 /* HomeViewController.m */; };
 		A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19701B315EE4D3D00016198 /* HomeViewController.xib */; };
 		A19701B915EE530E00016198 /* ServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A19701B815EE530E00016198 /* ServerInfo.m */; };
@@ -58,10 +75,8 @@
 		4F000F3215EDA60A0044358E /* MobileMouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobileMouse.xcdatamodel; sourceTree = "<group>"; };
 		4F000F6215EE39FD0044358E /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		4F000F6315EE39FD0044358E /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
-		4F000F6415EE39FD0044358E /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
 		4F000F6815EE3A3A0044358E /* PPTAssistantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTAssistantViewController.h; sourceTree = "<group>"; };
 		4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTAssistantViewController.m; sourceTree = "<group>"; };
-		4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPTAssistantViewController.xib; sourceTree = "<group>"; };
 		4F000F6E15EE3A770044358E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		4F000F6F15EE3A770044358E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		4F000F7415EE3AA00044358E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -70,28 +85,60 @@
 		4F000F7E15EE3D600044358E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		4F000F8415EE42830044358E /* ShowAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAlert.h; sourceTree = "<group>"; };
 		4F000F8515EE42830044358E /* ShowAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAlert.m; sourceTree = "<group>"; };
-		4F000F9615EE70BD0044358E /* TouchPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPadViewController.h; sourceTree = "<group>"; };
-		4F000F9715EE70BD0044358E /* TouchPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPadViewController.m; sourceTree = "<group>"; };
-		4F000F9815EE70BD0044358E /* TouchPadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchPadViewController.xib; sourceTree = "<group>"; };
 		4F000F9C15EE71230044358E /* WirelessMouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WirelessMouseViewController.h; sourceTree = "<group>"; };
 		4F000F9D15EE71230044358E /* WirelessMouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WirelessMouseViewController.m; sourceTree = "<group>"; };
 		4F000F9E15EE71230044358E /* WirelessMouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WirelessMouseViewController.xib; sourceTree = "<group>"; };
 		4F000FA215EE71810044358E /* WindowsTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsTouchView.h; sourceTree = "<group>"; };
 		4F000FA315EE71810044358E /* WindowsTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsTouchView.m; sourceTree = "<group>"; };
-		4F000FA515EE71970044358E /* MacTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacTouchView.h; sourceTree = "<group>"; };
-		4F000FA615EE71970044358E /* MacTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacTouchView.m; sourceTree = "<group>"; };
 		4F06374115FDEE8600275E83 /* RemoteDesktopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteDesktopViewController.h; sourceTree = "<group>"; };
 		4F06374215FDEE8600275E83 /* RemoteDesktopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteDesktopViewController.m; sourceTree = "<group>"; };
 		4F06374315FDEE8600275E83 /* RemoteDesktopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteDesktopViewController.xib; sourceTree = "<group>"; };
 		4F0E4E9A15F357080049C5DA /* RemoteToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteToolViewController.h; sourceTree = "<group>"; };
 		4F0E4E9B15F357080049C5DA /* RemoteToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteToolViewController.m; sourceTree = "<group>"; };
-		4F0E4E9C15F357090049C5DA /* RemoteToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteToolViewController.xib; sourceTree = "<group>"; };
 		4F0E4EAC15F36D730049C5DA /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		4F0E4EAD15F36D740049C5DA /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		4F0E4EAE15F36D740049C5DA /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
-		4F1E61C016059AED0096FAD3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		4F1E61C116059AED0096FAD3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		4F1E61C216059AED0096FAD3 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		4F31052B161C33D100A52F82 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		4F310531161C3ED000A52F82 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		4F310533161C3EED00A52F82 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		4F310535161C3EF600A52F82 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		4F310537161C3F0400A52F82 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		4F310539161C3FBD00A52F82 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		4F31053A161C3FBD00A52F82 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		4F31054D161C6F7000A52F82 /* ipad_table_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_table_down.png; sourceTree = "<group>"; };
+		4F31054E161C6F7000A52F82 /* ipad_table_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_table_down@2x.png"; sourceTree = "<group>"; };
+		4F31054F161C6F7000A52F82 /* ipad_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_table.png; sourceTree = "<group>"; };
+		4F310550161C6F7100A52F82 /* ipad_table@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_table@2x.png"; sourceTree = "<group>"; };
+		4F310555161C6F7B00A52F82 /* sign_In_form_alone_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_In_form_alone_down.png; sourceTree = "<group>"; };
+		4F310556161C6F7B00A52F82 /* sign_In_form_alone_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_In_form_alone_down@2x.png"; sourceTree = "<group>"; };
+		4F310557161C6F7B00A52F82 /* sign_In_form_alone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_In_form_alone.png; sourceTree = "<group>"; };
+		4F310558161C6F7B00A52F82 /* sign_In_form_alone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_In_form_alone@2x.png"; sourceTree = "<group>"; };
+		4F310572161C87F500A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F310574161C883600A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4F310575161C883600A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4F310576161C883B00A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4F310577161C883B00A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4F310582161C94E500A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RemoteToolViewController.xib; sourceTree = "<group>"; };
+		4F310584161C94EF00A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/RemoteToolViewController.xib"; sourceTree = "<group>"; };
+		4F310585161C94F100A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/RemoteToolViewController.xib"; sourceTree = "<group>"; };
+		4F310587161C95F500A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RemoteToolView_iPad.xib; sourceTree = "<group>"; };
+		4F310589161C95FA00A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/RemoteToolView_iPad.xib"; sourceTree = "<group>"; };
+		4F31058A161C960100A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/RemoteToolView_iPad.xib"; sourceTree = "<group>"; };
+		4F31058C161C987000A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PPTAssistantViewController.xib; sourceTree = "<group>"; };
+		4F31058E161C987900A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/PPTAssistantViewController.xib"; sourceTree = "<group>"; };
+		4F31058F161C987A00A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/PPTAssistantViewController.xib"; sourceTree = "<group>"; };
+		4F310591161C9A5000A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PPTAssistantView_iPad.xib; sourceTree = "<group>"; };
+		4F310593161C9A5500A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/PPTAssistantView_iPad.xib"; sourceTree = "<group>"; };
+		4F310594161C9A5600A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/PPTAssistantView_iPad.xib"; sourceTree = "<group>"; };
+		4F31059A161CA00D00A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConnectViewController.xib; sourceTree = "<group>"; };
+		4F31059D161CA01300A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/ConnectViewController.xib"; sourceTree = "<group>"; };
+		4F31059E161CA01400A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/ConnectViewController.xib"; sourceTree = "<group>"; };
+		4F3105A0161CA05E00A52F82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConnectView_iPad.xib; sourceTree = "<group>"; };
+		4F3105A2161CA06300A52F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/ConnectView_iPad.xib"; sourceTree = "<group>"; };
+		4F3105A3161CA06400A52F82 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/ConnectView_iPad.xib"; sourceTree = "<group>"; };
+		4FB3ED9F161963450073E84D /* WMHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHelpViewController.h; sourceTree = "<group>"; };
+		4FB3EDA0161963450073E84D /* WMHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHelpViewController.m; sourceTree = "<group>"; };
+		4FB3EDA1161963450073E84D /* WMHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMHelpViewController.xib; sourceTree = "<group>"; };
 		A19701B115EE4D3D00016198 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A19701B215EE4D3D00016198 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A19701B315EE4D3D00016198 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F31052C161C33D100A52F82 /* iAd.framework in Frameworks */,
 				4F000F7C15EE3CFF0044358E /* Security.framework in Frameworks */,
 				4F000F7515EE3AA00044358E /* CFNetwork.framework in Frameworks */,
 				4F000F1E15EDA60A0044358E /* UIKit.framework in Frameworks */,
@@ -138,6 +186,7 @@
 		4F000F1C15EDA60A0044358E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F31052B161C33D100A52F82 /* iAd.framework */,
 				4F000F7B15EE3CFF0044358E /* Security.framework */,
 				4F000F7415EE3AA00044358E /* CFNetwork.framework */,
 				4F000F1D15EDA60A0044358E /* UIKit.framework */,
@@ -151,19 +200,19 @@
 		4F000F2515EDA60A0044358E /* MobileMouse */ = {
 			isa = PBXGroup;
 			children = (
+				4FB3ED9D1619623D0073E84D /* iPad */,
 				4F1E61CD1605D0F60096FAD3 /* Util */,
 				4F1E61CC1605D0EC0096FAD3 /* Model */,
 				4F000F6D15EE3A620044358E /* TCP */,
-				4FB67E9815F2E53C00855D0E /* mac */,
 				4F000FA115EE715A0044358E /* View */,
 				4F000F2E15EDA60A0044358E /* AppDelegate.h */,
 				4F000F2F15EDA60A0044358E /* AppDelegate.m */,
 				4F000F6215EE39FD0044358E /* ConnectViewController.h */,
 				4F000F6315EE39FD0044358E /* ConnectViewController.m */,
-				4F000F6415EE39FD0044358E /* ConnectViewController.xib */,
+				4F31059B161CA00D00A52F82 /* ConnectViewController.xib */,
 				4F000F6815EE3A3A0044358E /* PPTAssistantViewController.h */,
 				4F000F6915EE3A3A0044358E /* PPTAssistantViewController.m */,
-				4F000F6A15EE3A3A0044358E /* PPTAssistantViewController.xib */,
+				4F31058D161C987000A52F82 /* PPTAssistantViewController.xib */,
 				4F000F3115EDA60A0044358E /* MobileMouse.xcdatamodeld */,
 				A19701B115EE4D3D00016198 /* HomeViewController.h */,
 				A19701B215EE4D3D00016198 /* HomeViewController.m */,
@@ -171,9 +220,12 @@
 				4F000F9C15EE71230044358E /* WirelessMouseViewController.h */,
 				4F000F9D15EE71230044358E /* WirelessMouseViewController.m */,
 				4F000F9E15EE71230044358E /* WirelessMouseViewController.xib */,
+				4FB3ED9F161963450073E84D /* WMHelpViewController.h */,
+				4FB3EDA0161963450073E84D /* WMHelpViewController.m */,
+				4FB3EDA1161963450073E84D /* WMHelpViewController.xib */,
 				4F0E4E9A15F357080049C5DA /* RemoteToolViewController.h */,
 				4F0E4E9B15F357080049C5DA /* RemoteToolViewController.m */,
-				4F0E4E9C15F357090049C5DA /* RemoteToolViewController.xib */,
+				4F310583161C94E500A52F82 /* RemoteToolViewController.xib */,
 				4F0E4EAC15F36D730049C5DA /* KeyboardViewController.h */,
 				4F0E4EAD15F36D740049C5DA /* KeyboardViewController.m */,
 				4F0E4EAE15F36D740049C5DA /* KeyboardViewController.xib */,
@@ -181,9 +233,6 @@
 				4F06374215FDEE8600275E83 /* RemoteDesktopViewController.m */,
 				4F06374315FDEE8600275E83 /* RemoteDesktopViewController.xib */,
 				4F000F2615EDA60A0044358E /* Supporting Files */,
-				4F1E61C016059AED0096FAD3 /* TestViewController.h */,
-				4F1E61C116059AED0096FAD3 /* TestViewController.m */,
-				4F1E61C216059AED0096FAD3 /* TestViewController.xib */,
 			);
 			path = MobileMouse;
 			sourceTree = "<group>";
@@ -191,10 +240,25 @@
 		4F000F2615EDA60A0044358E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F310555161C6F7B00A52F82 /* sign_In_form_alone_down.png */,
+				4F310556161C6F7B00A52F82 /* sign_In_form_alone_down@2x.png */,
+				4F310557161C6F7B00A52F82 /* sign_In_form_alone.png */,
+				4F310558161C6F7B00A52F82 /* sign_In_form_alone@2x.png */,
+				4F31054D161C6F7000A52F82 /* ipad_table_down.png */,
+				4F31054E161C6F7000A52F82 /* ipad_table_down@2x.png */,
+				4F31054F161C6F7000A52F82 /* ipad_table.png */,
+				4F310550161C6F7100A52F82 /* ipad_table@2x.png */,
+				4F310531161C3ED000A52F82 /* down.png */,
+				4F310533161C3EED00A52F82 /* up.png */,
+				4F310535161C3EF600A52F82 /* left.png */,
+				4F310537161C3F0400A52F82 /* right.png */,
+				4F310539161C3FBD00A52F82 /* pause.png */,
+				4F31053A161C3FBD00A52F82 /* play.png */,
 				4F000F2715EDA60A0044358E /* MobileMouse-Info.plist */,
 				4F000F2815EDA60A0044358E /* InfoPlist.strings */,
 				4F000F2B15EDA60A0044358E /* main.m */,
 				4F000F2D15EDA60A0044358E /* MobileMouse-Prefix.pch */,
+				4F310573161C87F500A52F82 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,16 +303,14 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
-		4FB67E9815F2E53C00855D0E /* mac */ = {
+		4FB3ED9D1619623D0073E84D /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				4F000F9615EE70BD0044358E /* TouchPadViewController.h */,
-				4F000F9715EE70BD0044358E /* TouchPadViewController.m */,
-				4F000F9815EE70BD0044358E /* TouchPadViewController.xib */,
-				4F000FA515EE71970044358E /* MacTouchView.h */,
-				4F000FA615EE71970044358E /* MacTouchView.m */,
+				4F3105A1161CA05E00A52F82 /* ConnectView_iPad.xib */,
+				4F310592161C9A5000A52F82 /* PPTAssistantView_iPad.xib */,
+				4F310588161C95F500A52F82 /* RemoteToolView_iPad.xib */,
 			);
-			name = mac;
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +348,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 4F000F0E15EDA60A0044358E;
 			productRefGroup = 4F000F1A15EDA60A0044358E /* Products */;
@@ -303,15 +367,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F000F2A15EDA60A0044358E /* InfoPlist.strings in Resources */,
-				4F000F6615EE39FD0044358E /* ConnectViewController.xib in Resources */,
-				4F000F6C15EE3A3A0044358E /* PPTAssistantViewController.xib in Resources */,
+				4F310599161CA00D00A52F82 /* ConnectViewController.xib in Resources */,
+				4F31058B161C987000A52F82 /* PPTAssistantViewController.xib in Resources */,
 				A19701B515EE4D3D00016198 /* HomeViewController.xib in Resources */,
-				4F000F9A15EE70BE0044358E /* TouchPadViewController.xib in Resources */,
 				4F000FA015EE71230044358E /* WirelessMouseViewController.xib in Resources */,
-				4F0E4E9E15F357090049C5DA /* RemoteToolViewController.xib in Resources */,
+				4F310581161C94E500A52F82 /* RemoteToolViewController.xib in Resources */,
 				4F0E4EB015F36D740049C5DA /* KeyboardViewController.xib in Resources */,
 				4F06374515FDEE8600275E83 /* RemoteDesktopViewController.xib in Resources */,
-				4F1E61C416059AED0096FAD3 /* TestViewController.xib in Resources */,
+				4FB3EDA3161963450073E84D /* WMHelpViewController.xib in Resources */,
+				4F31059F161CA05E00A52F82 /* ConnectView_iPad.xib in Resources */,
+				4F310532161C3ED000A52F82 /* down.png in Resources */,
+				4F310534161C3EED00A52F82 /* up.png in Resources */,
+				4F310536161C3EF700A52F82 /* left.png in Resources */,
+				4F310538161C3F0400A52F82 /* right.png in Resources */,
+				4F31053B161C3FBE00A52F82 /* pause.png in Resources */,
+				4F31053C161C3FBE00A52F82 /* play.png in Resources */,
+				4F310590161C9A5000A52F82 /* PPTAssistantView_iPad.xib in Resources */,
+				4F310586161C95F500A52F82 /* RemoteToolView_iPad.xib in Resources */,
+				4F310551161C6F7100A52F82 /* ipad_table_down.png in Resources */,
+				4F310552161C6F7100A52F82 /* ipad_table_down@2x.png in Resources */,
+				4F310553161C6F7100A52F82 /* ipad_table.png in Resources */,
+				4F310554161C6F7100A52F82 /* ipad_table@2x.png in Resources */,
+				4F310559161C6F7B00A52F82 /* sign_In_form_alone_down.png in Resources */,
+				4F31055A161C6F7B00A52F82 /* sign_In_form_alone_down@2x.png in Resources */,
+				4F31055B161C6F7B00A52F82 /* sign_In_form_alone.png in Resources */,
+				4F31055C161C6F7B00A52F82 /* sign_In_form_alone@2x.png in Resources */,
+				4F310571161C87F500A52F82 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F31054A161C6B6600A52F82 /* ShowAlert.m in Sources */,
 				4F000F7A15EE3CAF0044358E /* GCDAsyncSocket.m in Sources */,
 				4F000F2C15EDA60A0044358E /* main.m in Sources */,
 				4F000F3015EDA60A0044358E /* AppDelegate.m in Sources */,
@@ -332,14 +414,12 @@
 				A19701B415EE4D3D00016198 /* HomeViewController.m in Sources */,
 				A19701B915EE530E00016198 /* ServerInfo.m in Sources */,
 				A19701BC15EE556800016198 /* NSUserDefaults+Util.m in Sources */,
-				4F000F9915EE70BE0044358E /* TouchPadViewController.m in Sources */,
 				4F000F9F15EE71230044358E /* WirelessMouseViewController.m in Sources */,
 				4F000FA415EE71810044358E /* WindowsTouchView.m in Sources */,
-				4F000FA715EE71970044358E /* MacTouchView.m in Sources */,
 				4F0E4E9D15F357090049C5DA /* RemoteToolViewController.m in Sources */,
 				4F0E4EAF15F36D740049C5DA /* KeyboardViewController.m in Sources */,
 				4F06374415FDEE8600275E83 /* RemoteDesktopViewController.m in Sources */,
-				4F1E61C316059AED0096FAD3 /* TestViewController.m in Sources */,
+				4FB3EDA2161963450073E84D /* WMHelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +430,80 @@
 			isa = PBXVariantGroup;
 			children = (
 				4F000F2915EDA60A0044358E /* en */,
+				4F310574161C883600A52F82 /* zh-Hans */,
+				4F310576161C883B00A52F82 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F310573161C87F500A52F82 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F310572161C87F500A52F82 /* en */,
+				4F310575161C883600A52F82 /* zh-Hans */,
+				4F310577161C883B00A52F82 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4F310583161C94E500A52F82 /* RemoteToolViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F310582161C94E500A52F82 /* en */,
+				4F310584161C94EF00A52F82 /* zh-Hans */,
+				4F310585161C94F100A52F82 /* zh-Hant */,
+			);
+			name = RemoteToolViewController.xib;
+			sourceTree = "<group>";
+		};
+		4F310588161C95F500A52F82 /* RemoteToolView_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F310587161C95F500A52F82 /* en */,
+				4F310589161C95FA00A52F82 /* zh-Hans */,
+				4F31058A161C960100A52F82 /* zh-Hant */,
+			);
+			name = RemoteToolView_iPad.xib;
+			sourceTree = "<group>";
+		};
+		4F31058D161C987000A52F82 /* PPTAssistantViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F31058C161C987000A52F82 /* en */,
+				4F31058E161C987900A52F82 /* zh-Hans */,
+				4F31058F161C987A00A52F82 /* zh-Hant */,
+			);
+			name = PPTAssistantViewController.xib;
+			sourceTree = "<group>";
+		};
+		4F310592161C9A5000A52F82 /* PPTAssistantView_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F310591161C9A5000A52F82 /* en */,
+				4F310593161C9A5500A52F82 /* zh-Hans */,
+				4F310594161C9A5600A52F82 /* zh-Hant */,
+			);
+			name = PPTAssistantView_iPad.xib;
+			sourceTree = "<group>";
+		};
+		4F31059B161CA00D00A52F82 /* ConnectViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F31059A161CA00D00A52F82 /* en */,
+				4F31059D161CA01300A52F82 /* zh-Hans */,
+				4F31059E161CA01400A52F82 /* zh-Hant */,
+			);
+			name = ConnectViewController.xib;
+			sourceTree = "<group>";
+		};
+		4F3105A1161CA05E00A52F82 /* ConnectView_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F3105A0161CA05E00A52F82 /* en */,
+				4F3105A2161CA06300A52F82 /* zh-Hans */,
+				4F3105A3161CA06400A52F82 /* zh-Hant */,
+			);
+			name = ConnectView_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,7 +562,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileMouse/MobileMouse-Prefix.pch";
 				INFOPLIST_FILE = "MobileMouse/MobileMouse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,7 +575,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileMouse/MobileMouse-Prefix.pch";
 				INFOPLIST_FILE = "MobileMouse/MobileMouse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

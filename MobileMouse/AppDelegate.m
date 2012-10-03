@@ -29,7 +29,15 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
-    ConnectViewController *controller = [[ConnectViewController alloc] initWithNibName:@"ConnectViewController" bundle:nil];
+    ConnectViewController *controller;
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        controller = [[ConnectViewController alloc] initWithNibName:@"ConnectViewController" bundle:nil];
+    }else {
+        
+        controller = [[ConnectViewController alloc] initWithNibName:@"ConnectView_iPad" bundle:nil];
+    }
+    
     
     UINavigationController *aNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
     

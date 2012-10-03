@@ -10,6 +10,7 @@
 #import "ServerInfo.h"
 #import "Constants.h"
 #import "GCDAsyncSocket.h"
+#import "WMHelpViewController.h"
 
 @interface WirelessMouseViewController ()
 
@@ -31,6 +32,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = NSLocalizedString(@"Wireless Mouse", nil);
     
     touchpadView.delegate = self;
     
@@ -63,11 +66,13 @@
     
     [twoFingerOneTapGestureRecognizer release];
     
-//    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
-//    
-//    [self.touchpadView addGestureRecognizer:panGestureRecognizer];
-//    
-//    [panGestureRecognizer release];
+
+    UIBarButtonItem *helpBarButtonItem = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedString(@"Help", nil)  style:UIBarButtonItemStyleBordered target:self action:@selector(helpButtonPressed:)];
+    
+    self.navigationItem.rightBarButtonItem = helpBarButtonItem;
+    
+    [helpBarButtonItem release];
+    
     
     ServerInfo *sharedInstance = [ServerInfo sharedManager];
     
@@ -75,6 +80,15 @@
     
     asyncSocket = sharedInstance.asyncSocket;
     
+}
+
+-(void)helpButtonPressed:(id)sender {
+    
+    WMHelpViewController *controller = [[WMHelpViewController alloc] initWithNibName:@"WMHelpViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
+    [controller release];
 }
 
 -(void)tappedAction:(UITapGestureRecognizer *)sender {
@@ -165,6 +179,8 @@
 
 
 - (void)dealloc {
+    touchpadView.delegate = nil;
+    
     [touchpadView release];
     [super dealloc];
 }
